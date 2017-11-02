@@ -17,4 +17,4 @@ Run using npm run <script> command.
     build - compile source files.
 
 ## License
-MIT © [Dimitri DO BAIRRO](https://github.com/rimiti/react-native-pickerise/blob/master/LICENSE)
+MIT © [Dimitri DO BAIRRO](https://github.com/rimiti/js-getshares/blob/master/LICENSE)
