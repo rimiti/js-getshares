@@ -10,6 +10,11 @@ This module provides a client side code to using getshar.es service.
 $ npm install js-getshares
 ```
 
+## CDN
+```
+https://cdn.jsdelivr.net/npm/js-getshares@latest/dist/index.min.js
+```
+
 ## Scripts
 
 Run using npm run <script> command.
