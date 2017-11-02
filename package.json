@@ -1,0 +1,21 @@
+{
+  "name": "js-getshares",
+  "description": "Javascript client side getshar.es client.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "^1.12.7",
+    "nib": "^1.1.2",
+    "stylus": "^0.54.5",
+    "uglify-js": "^3.1.6"
+  },
+  "scripts": {
+    "build": "cake build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rimiti/js-getshares.git"
+  }
+}
