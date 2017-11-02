@@ -4,7 +4,7 @@ path = require "path"
 {spawn} = require "child_process"
 
 build = (options, callback) ->
-  out = options?.out?[0] or "lib"
+  out = options?.out?[0] or "dist"
   src = "src"
 
   init = (cb) ->
@@ -24,7 +24,7 @@ build = (options, callback) ->
     coffee.stdout.on "data", (data) -> log data.toString()
     coffee.on "exit", (code) ->
       fs.readdir out, (err, files) ->
-        return process.stderr.write err if err? 
+        return process.stderr.write err if err?
         log "coffee done #{src}/* -> #{out}/* (#{files.length} files)\n"
         files.forEach (file, index) ->
           if /\.js$/.test file
@@ -43,7 +43,7 @@ build = (options, callback) ->
     stylus.on "exit", (code) ->
       log "stylus done #{src} -> #{out} (minified)\n"
       fs.readdir out, (err, files) ->
-        return process.stderr.write err if err? 
+        return process.stderr.write err if err?
         for file in files
           if /\.css$/.test file
             srcFile = path.join out, file
