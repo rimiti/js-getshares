@@ -1,5 +1,7 @@
 # js-getshares
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rimiti/js-getshares.svg)](https://greenkeeper.io/)
+
 
 ## Description
 
